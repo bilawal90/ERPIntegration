@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 25 14:30:34 PKT 2020</td>
+<td>Started on:</td><td>Fri Mar 27 17:49:43 PKT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12357 ms)</td>
+<tr><td>Total time:</td><td>156 seconds (156890 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='SmokeTest.ShopifyTest.B4Test()'><b>B4Test</b><br>Test class: SmokeTest.ShopifyTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class=&apos;_3yby5&apos;])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;10.165.2.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObjects.AX.getProceedLink(AX.java:56)
-	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+	at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -111,18 +111,18 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1033917063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1033917063'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+</pre></div><a href='#' onClick='toggleBox("stack-trace1933224408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1933224408'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class=&apos;_3yby5&apos;])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;10.165.2.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObjects.AX.getProceedLink(AX.java:56)
-	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+	at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -148,7 +148,7 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
+<td>156</td>
 <td>SmokeTest.ShopifyTest@77fbd92c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -180,8 +180,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1718906711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1718906711'><pre>java.lang.Throwable: Method ShopifyTest.VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace549049813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace549049813'><pre>java.lang.Throwable: Method ShopifyTest.VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -226,8 +226,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2134271532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2134271532'><pre>java.lang.Throwable: Method ShopifyTest.VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace1623761043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1623761043'><pre>java.lang.Throwable: Method ShopifyTest.VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -272,8 +272,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace527211736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace527211736'><pre>java.lang.Throwable: Method ShopifyTest.VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace1109966680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1109966680'><pre>java.lang.Throwable: Method ShopifyTest.VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -298,17 +298,17 @@ Driver info: driver.version: RemoteWebDriver
 <td>SmokeTest.ShopifyTest@77fbd92c</td></tr>
 <tr>
 <td title='SmokeTest.ShopifyTest.VerifyProductSync()'><b>VerifyProductSync</b><br>Test class: SmokeTest.ShopifyTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class=&apos;_3yby5&apos;])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;10.165.2.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObjects.AX.getProceedLink(AX.java:56)
-	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+	at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -333,18 +333,18 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1860591867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1860591867'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+</pre></div><a href='#' onClick='toggleBox("stack-trace585803886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace585803886'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class=&apos;_3yby5&apos;])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;10.165.2.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObjects.AX.getProceedLink(AX.java:56)
-	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+	at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -394,8 +394,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace69673470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace69673470'><pre>java.lang.Throwable: Method ShopifyTest.VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace1872034717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1872034717'><pre>java.lang.Throwable: Method ShopifyTest.VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)

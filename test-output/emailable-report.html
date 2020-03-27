@@ -9,21 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">12,357</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">156,890</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">SmokeTest.ShopifyTest</td><td><a href="#m0">B4Test</a></td><td rowspan="1">1585128634512</td><td rowspan="1">12231</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">SmokeTest.ShopifyTest</td><td><a href="#m1">VerifyOrderSync</a></td><td rowspan="1">1585128646854</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">VerifyOrderandInvoiceUpdateSync</a></td><td rowspan="1">1585128646860</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">VerifyProductQuantitySync</a></td><td rowspan="1">1585128646844</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">VerifyProductSync</a></td><td rowspan="1">1585128646819</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">VerifyProductUpdateSync</a></td><td rowspan="1">1585128646834</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">SmokeTest.ShopifyTest</td><td><a href="#m0">B4Test</a></td><td rowspan="1">1585313383830</td><td rowspan="1">156810</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">SmokeTest.ShopifyTest</td><td><a href="#m1">VerifyOrderSync</a></td><td rowspan="1">1585313540711</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">VerifyOrderandInvoiceUpdateSync</a></td><td rowspan="1">1585313540714</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">VerifyProductQuantitySync</a></td><td rowspan="1">1585313540709</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">VerifyProductSync</a></td><td rowspan="1">1585313540698</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">VerifyProductUpdateSync</a></td><td rowspan="1">1585313540705</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">SmokeTest.ShopifyTest#B4Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+<h2>Default test</h2><h3 id="m0">SmokeTest.ShopifyTest#B4Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class=&apos;_3yby5&apos;])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;10.165.2.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObjects.AX.getProceedLink(AX.java:56)
-	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+	at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -112,17 +112,17 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">SmokeTest.ShopifyTest#VerifyProductSync</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+<h3 id="m4">SmokeTest.ShopifyTest#VerifyProductSync</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class=&apos;_3yby5&apos;])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+System info: host: &apos;MBILAWAL-LT&apos;, ip: &apos;10.165.2.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObjects.AX.getProceedLink(AX.java:56)
-	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+	at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+	at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

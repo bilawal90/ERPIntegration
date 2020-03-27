@@ -2,32 +2,32 @@
 <testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12357" started-at="2020-03-25T14:30:34 PKT" finished-at="2020-03-25T14:30:46 PKT">
+  <suite name="Default suite" duration-ms="156890" started-at="2020-03-27T17:49:43 PKT" finished-at="2020-03-27T17:52:20 PKT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12357" started-at="2020-03-25T14:30:34 PKT" finished-at="2020-03-25T14:30:46 PKT">
+    <test name="Default test" duration-ms="156890" started-at="2020-03-27T17:49:43 PKT" finished-at="2020-03-27T17:52:20 PKT">
       <class name="SmokeTest.ShopifyTest">
-        <test-method status="FAIL" signature="B4Test()[pri:0, instance:SmokeTest.ShopifyTest@77fbd92c]" name="B4Test" is-config="true" duration-ms="12231" started-at="2020-03-25T14:30:34 PKT" finished-at="2020-03-25T14:30:46 PKT">
+        <test-method status="FAIL" signature="B4Test()[pri:0, instance:SmokeTest.ShopifyTest@77fbd92c]" name="B4Test" is-config="true" duration-ms="156810" started-at="2020-03-27T17:49:43 PKT" finished-at="2020-03-27T17:52:20 PKT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate an element using id=proceed-link
+              <![CDATA[Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MBILAWAL-LT', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MBILAWAL-LT', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: driver.version: RemoteWebDriver
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.AX.getProceedLink(AX.java:56)
-at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,27 +58,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- B4Test -->
-        <test-method status="SKIP" signature="VerifyProductSync()[pri:1, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductSync" duration-ms="0" started-at="2020-03-25T14:30:46 PKT" finished-at="2020-03-25T14:30:46 PKT">
+        <test-method status="SKIP" signature="VerifyProductSync()[pri:1, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" finished-at="2020-03-27T17:52:20 PKT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate an element using id=proceed-link
+              <![CDATA[Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MBILAWAL-LT', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=proceed-link
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MBILAWAL-LT', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: driver.version: RemoteWebDriver
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.AX.getProceedLink(AX.java:56)
-at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:67)
+at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
+at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -109,7 +109,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductSync -->
-        <test-method status="SKIP" signature="VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductUpdateSync" duration-ms="0" started-at="2020-03-25T14:30:46 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-25T14:30:46 PKT">
+        <test-method status="SKIP" signature="VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductUpdateSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-27T17:52:20 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -141,7 +141,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductUpdateSync -->
-        <test-method status="SKIP" signature="VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductQuantitySync" duration-ms="0" started-at="2020-03-25T14:30:46 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-25T14:30:46 PKT">
+        <test-method status="SKIP" signature="VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductQuantitySync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-27T17:52:20 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -173,7 +173,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductQuantitySync -->
-        <test-method status="SKIP" signature="VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderSync" duration-ms="0" started-at="2020-03-25T14:30:46 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductQuantitySync" finished-at="2020-03-25T14:30:46 PKT">
+        <test-method status="SKIP" signature="VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductQuantitySync" finished-at="2020-03-27T17:52:20 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -205,7 +205,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOrderSync -->
-        <test-method status="SKIP" signature="VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderandInvoiceUpdateSync" duration-ms="0" started-at="2020-03-25T14:30:46 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyOrderSync" finished-at="2020-03-25T14:30:46 PKT">
+        <test-method status="SKIP" signature="VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderandInvoiceUpdateSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyOrderSync" finished-at="2020-03-27T17:52:20 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
