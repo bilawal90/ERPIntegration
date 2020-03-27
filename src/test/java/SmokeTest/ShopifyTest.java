@@ -377,7 +377,7 @@ Thread.sleep(1000);
 		
 		
 		//until(ExpectedConditions.invisibilityOf(pop.getCancelBtn1()));
-		 Thread.sleep(7000);
+		 Thread.sleep(10000);
 			
 		WebElement ReceiveBtn = wt.until(ExpectedConditions.elementToBeClickable(pop.getReceiveBtn()));
 		// wt.until(ExpectedConditions.elementToBeClickable(pop.getReceiveBtn()));
