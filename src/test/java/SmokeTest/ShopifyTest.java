@@ -428,13 +428,17 @@ Thread.sleep(1000);
 		
 		ShopMain SM = new ShopMain(driver);
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getEmail()));
+		wait.until(ExpectedConditions.visibilityOf(SM.getEmail()));
 		SM.getEmail().click();
 		
 		SM.getEmail().sendKeys(Shopemail);
 
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getNxtBtn()));
 		SM.getNxtBtn().click();
+		
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getPswd()));
+		wait.until(ExpectedConditions.visibilityOf(SM.getPswd()));
+		SM.getPswd().click();
 		SM.getPswd().sendKeys(Shoppswd);
 
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getLoginBtn()));
