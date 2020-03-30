@@ -622,7 +622,7 @@ Thread.sleep(5000);
 
 		SaO.getCancelBtn().click();
 		
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getReason()));
 		
