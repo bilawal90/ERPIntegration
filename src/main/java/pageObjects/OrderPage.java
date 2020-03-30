@@ -15,13 +15,19 @@ public class OrderPage {
 	
 	By InStatus = By.xpath("//*[@id=\"order-title-bar\"]/div[2]/div[1]/span[2]/div/div[2]/div/span[2]");
 	
+	By TNum = By.xpath("//span[contains(.,'123')]");
 	
 	
 	
 	
 	
 	
+public WebElement getTNum()
 	
+	{
+		return driver.findElement(TNum);
+		
+	}
 	
 public WebElement getPayStatus()
 	

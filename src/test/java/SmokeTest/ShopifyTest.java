@@ -42,6 +42,8 @@ public class ShopifyTest extends base{
 	
 	public static Logger log = LogManager.getLogger(base.class.getName());
 	
+public String ordernum;
+	
 	
 	@BeforeTest()
 	public void B4Test() throws InterruptedException, IOException
@@ -386,7 +388,7 @@ Thread.sleep(1000);
 		ReceiveBtn.click();
 		//an.moveToElement(pop.getReceiveBtn()).click().perform();
 		
-		
+		Thread.sleep(4000);
 		wt.until(ExpectedConditions.elementToBeClickable(pop.getPrdctRcptBtn()));
 		wt.until(ExpectedConditions.visibilityOf(pop.getPrdctRcptBtn()));
 		//an.moveToElement(pop.getPrdctRcptBtn());
@@ -529,7 +531,7 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getOrderNum()));	
 
-		String ordernum = SM.getOrderNum().getText();
+		ordernum = SM.getOrderNum().getText();
 		System.out.println(ordernum);
 		//Assembler
 		((JavascriptExecutor)driver).executeScript("window.open()");
@@ -577,12 +579,12 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 		wait.until(ExpectedConditions.elementToBeClickable(np.getAllSO1()));
 
 		np.getAllSO1().click();
-
+Thread.sleep(3000);
 
 		SO SaO = new SO(driver);
 
 		//wt.until(ExpectedConditions.elementToBeClickable(SaO.getSearchBox()));
-		wait.until(ExpectedConditions.stalenessOf(SaO.getSearchBox()));
+		//30-3wait.until(ExpectedConditions.stalenessOf(SaO.getSearchBox()));
 		//wt.until(ExpectedConditions.visibilityOf(SaO.getSearchBox()));
 		SaO.getSearchBox().click();
 		SaO.getSearchBox().sendKeys(axorder + Keys.ENTER);
@@ -602,13 +604,13 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getReason()));
 		SaO.getReason().sendKeys("123");
-
+Thread.sleep(1000);
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getPick()));
 		SaO.getPick().click();
 
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getPostSlip()));
 		SaO.getPostSlip().click();
-
+Thread.sleep(5000);
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getPackOk()));
 		SaO.getPackOk().click();
 
@@ -619,14 +621,17 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 
 
 		SaO.getCancelBtn().click();
+		
+		Thread.sleep(5000);
 
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getReason()));
 		
 		SaO.getReason().click();
-		
+		Thread.sleep(2000);
 		Actions an = new Actions(driver);
 		
 		//wt.until(ExpectedConditions.stalenessOf(SaO.getInvoiceTab()));
+		
 		an.moveToElement(SaO.getInvoiceTab()).perform();
 		SaO.getInvoiceTab().click();
 
@@ -638,13 +643,14 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 		SaO.getInvoiceOk().click();
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getInCnfrmOk()));
 		SaO.getInCnfrmOk().click();
+		Thread.sleep(5000);
 	}
 
 
 // SO Invoicing Verification
 	
 	@Test(priority = 5, enabled=true,dependsOnMethods = { "VerifyOrderSync" })
-	public void VerifyOrderandInvoiceUpdateSync()
+	public void VerifyOrderandInvoiceUpdateSync() throws InterruptedException
 	{
 		ShopMain SM = new ShopMain(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 120);
@@ -654,15 +660,18 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 		
 		
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getOrders()));
+		Thread.sleep(5000);
 		
 		SM.getOrders().click();
 		
 		OrderPage op = new OrderPage(driver);
 		
-		wait.until(ExpectedConditions.elementToBeClickable(op.getOrderId()));
+		WebElement  orderid= driver.findElement(By.xpath("//span[text()='"+ordernum+"']"));
 		
-		op.getOrderId().click();
-
+		wait.until(ExpectedConditions.elementToBeClickable(orderid));
+		Thread.sleep(10000);
+		orderid.click();
+		
 		//wait.until(ExpectedConditions.elementToBeClickable(op.getPayStatus()));
 		wait.until(ExpectedConditions.stalenessOf(op.getPayStatus()));
 		String Act_PayStatus = op.getPayStatus().getText();
@@ -676,5 +685,19 @@ Assert.assertEquals(SM.getQuantity().getAttribute("value"), "1", "Inventory sync
 		Assert.assertEquals(Act_InvoiceStatus, exp_InvoiceStatus, "Financial Status of the Order has not been Updated by the connector");
 		
 	}
+	
+	
+	@Test (priority = 6, enabled=true, dependsOnMethods = { "VerifyOrderandInvoiceUpdateSync" })
+	public void VerifyTrackingNumberSync() throws IOException, InterruptedException
+	{
+		OrderPage op1 = new OrderPage(driver);
+	try {
+		Assert.assertEquals(op1.getTNum().getText(), "123", "Tracking number on the order has not synced");
+	}
+catch(Exception e)
+	{
+	Assert.assertEquals(false, true, "tracking number is not synced by the ComAX COnnector");
+	}
+	}
+	
 }
-

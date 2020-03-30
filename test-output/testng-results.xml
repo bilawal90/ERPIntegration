@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
+<testng-results skipped="6" failed="0" ignored="0" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="156890" started-at="2020-03-27T17:49:43 PKT" finished-at="2020-03-27T17:52:20 PKT">
+  <suite name="Default suite" duration-ms="65277" started-at="2020-03-30T14:40:39 PKT" finished-at="2020-03-30T14:41:44 PKT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="156890" started-at="2020-03-27T17:49:43 PKT" finished-at="2020-03-27T17:52:20 PKT">
+    <test name="Default test" duration-ms="65277" started-at="2020-03-30T14:40:39 PKT" finished-at="2020-03-30T14:41:44 PKT">
       <class name="SmokeTest.ShopifyTest">
-        <test-method status="FAIL" signature="B4Test()[pri:0, instance:SmokeTest.ShopifyTest@77fbd92c]" name="B4Test" is-config="true" duration-ms="156810" started-at="2020-03-27T17:49:43 PKT" finished-at="2020-03-27T17:52:20 PKT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="B4Test()[pri:0, instance:SmokeTest.ShopifyTest@77fbd92c]" name="B4Test" is-config="true" duration-ms="65243" started-at="2020-03-30T14:40:39 PKT" finished-at="2020-03-30T14:41:44 PKT">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[element click intercepted: Element <div class="button-container">...</div> is not clickable at point (24, 25). Other element would receive the click: <div tabindex="-1" id="ShellBlockingDiv" class="applicationShell-blockingMessage unselectable" style="" data-dyn-bind="click: $dyn.shell.animateBlockingText, keyDown: $dyn.shell.blockingDivKeydown">...</div>
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\mbilawal\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d84f99a4b46e870cc43ae4831a78e66e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="button-container">...</div> is not clickable at point (24, 25). Other element would receive the click: <div tabindex="-1" id="ShellBlockingDiv" class="applicationShell-blockingMessage unselectable" style="" data-dyn-bind="click: $dyn.shell.animateBlockingText, keyDown: $dyn.shell.blockingDivKeydown">...</div>
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
-at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\mbilawal\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d84f99a4b46e870cc43ae4831a78e66e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:127)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,31 +65,42 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- B4Test -->
-        <test-method status="SKIP" signature="VerifyProductSync()[pri:1, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" finished-at="2020-03-27T17:52:20 PKT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyProductSync()[pri:1, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductSync" duration-ms="0" started-at="2020-03-30T14:41:44 PKT" finished-at="2020-03-30T14:41:44 PKT">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[element click intercepted: Element <div class="button-container">...</div> is not clickable at point (24, 25). Other element would receive the click: <div tabindex="-1" id="ShellBlockingDiv" class="applicationShell-blockingMessage unselectable" style="" data-dyn-bind="click: $dyn.shell.animateBlockingText, keyDown: $dyn.shell.blockingDivKeydown">...</div>
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\mbilawal\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d84f99a4b46e870cc43ae4831a78e66e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//span[@class='_3yby5'])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="button-container">...</div> is not clickable at point (24, 25). Other element would receive the click: <div tabindex="-1" id="ShellBlockingDiv" class="applicationShell-blockingMessage unselectable" style="" data-dyn-bind="click: $dyn.shell.animateBlockingText, keyDown: $dyn.shell.blockingDivKeydown">...</div>
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MBILAWAL-LT', ip: '10.165.2.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.ShopMain.getSearchedPrdct1(ShopMain.java:97)
-at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:444)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\mbilawal\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d84f99a4b46e870cc43ae4831a78e66e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at SmokeTest.ShopifyTest.B4Test(ShopifyTest.java:127)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,11 +127,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductSync -->
-        <test-method status="SKIP" signature="VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductUpdateSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-27T17:52:20 PKT">
+        <test-method status="SKIP" signature="VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductUpdateSync" duration-ms="0" started-at="2020-03-30T14:41:44 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-30T14:41:44 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyProductUpdateSync()[pri:2, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -141,7 +163,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductUpdateSync -->
-        <test-method status="SKIP" signature="VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductQuantitySync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-27T17:52:20 PKT">
+        <test-method status="SKIP" signature="VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyProductQuantitySync" duration-ms="0" started-at="2020-03-30T14:41:44 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductSync" finished-at="2020-03-30T14:41:44 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyProductQuantitySync()[pri:3, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -173,7 +195,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductQuantitySync -->
-        <test-method status="SKIP" signature="VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductQuantitySync" finished-at="2020-03-27T17:52:20 PKT">
+        <test-method status="SKIP" signature="VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderSync" duration-ms="0" started-at="2020-03-30T14:41:44 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyProductQuantitySync" finished-at="2020-03-30T14:41:44 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyOrderSync()[pri:4, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -205,7 +227,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOrderSync -->
-        <test-method status="SKIP" signature="VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderandInvoiceUpdateSync" duration-ms="0" started-at="2020-03-27T17:52:20 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyOrderSync" finished-at="2020-03-27T17:52:20 PKT">
+        <test-method status="SKIP" signature="VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyOrderandInvoiceUpdateSync" duration-ms="0" started-at="2020-03-30T14:41:44 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyOrderSync" finished-at="2020-03-30T14:41:44 PKT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ShopifyTest.VerifyOrderandInvoiceUpdateSync()[pri:5, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
@@ -237,6 +259,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOrderandInvoiceUpdateSync -->
+        <test-method status="SKIP" signature="VerifyTrackingNumberSync()[pri:6, instance:SmokeTest.ShopifyTest@77fbd92c]" name="VerifyTrackingNumberSync" duration-ms="0" started-at="2020-03-30T14:41:44 PKT" depends-on-methods="SmokeTest.ShopifyTest.VerifyOrderandInvoiceUpdateSync" finished-at="2020-03-30T14:41:44 PKT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ShopifyTest.VerifyTrackingNumberSync()[pri:6, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ShopifyTest.VerifyTrackingNumberSync()[pri:6, instance:SmokeTest.ShopifyTest@77fbd92c] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTrackingNumberSync -->
       </class> <!-- SmokeTest.ShopifyTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
