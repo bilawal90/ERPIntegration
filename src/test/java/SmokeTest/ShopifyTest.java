@@ -622,7 +622,7 @@ Thread.sleep(5000);
 
 		SaO.getCancelBtn().click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getReason()));
 		
@@ -643,7 +643,7 @@ Thread.sleep(5000);
 		SaO.getInvoiceOk().click();
 		wait.until(ExpectedConditions.elementToBeClickable(SaO.getInCnfrmOk()));
 		SaO.getInCnfrmOk().click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 	}
 
 
@@ -660,7 +660,7 @@ Thread.sleep(5000);
 		
 		
 		wait.until(ExpectedConditions.elementToBeClickable(SM.getOrders()));
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		
 		SM.getOrders().click();
 		
@@ -668,8 +668,9 @@ Thread.sleep(5000);
 		
 		WebElement  orderid= driver.findElement(By.xpath("//span[text()='"+ordernum+"']"));
 		
-		wait.until(ExpectedConditions.elementToBeClickable(orderid));
 		Thread.sleep(15000);
+		wait.until(ExpectedConditions.elementToBeClickable(orderid));
+		
 		orderid.click();
 		
 		//wait.until(ExpectedConditions.elementToBeClickable(op.getPayStatus()));
