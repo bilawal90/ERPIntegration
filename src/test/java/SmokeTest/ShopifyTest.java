@@ -669,7 +669,7 @@ Thread.sleep(5000);
 		WebElement  orderid= driver.findElement(By.xpath("//span[text()='"+ordernum+"']"));
 		
 		wait.until(ExpectedConditions.elementToBeClickable(orderid));
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		orderid.click();
 		
 		//wait.until(ExpectedConditions.elementToBeClickable(op.getPayStatus()));
@@ -687,7 +687,7 @@ Thread.sleep(5000);
 	}
 	
 	
-	@Test (priority = 6, enabled=true, dependsOnMethods = { "VerifyOrderandInvoiceUpdateSync" })
+	@Test (priority = 6, enabled=true, dependsOnMethods = { "VerifyOrderSync" })
 	public void VerifyTrackingNumberSync() throws IOException, InterruptedException
 	{
 		OrderPage op1 = new OrderPage(driver);
