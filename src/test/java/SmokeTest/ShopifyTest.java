@@ -229,6 +229,7 @@ Thread.sleep(1000);
 		wt.until(ExpectedConditions.visibilityOf(np.getRProduct()));
 		wt.until(ExpectedConditions.elementToBeClickable(np.getRProduct()));
 		np.getRProduct().click();
+		System.out.println(name);
 		
 		RProduct rp = new RProduct(driver);
 				 
