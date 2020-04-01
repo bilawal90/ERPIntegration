@@ -90,7 +90,7 @@ public String ordernum;
 		wt.until(ExpectedConditions.visibilityOf(np.getNavPanel()));
 		wt.until(ExpectedConditions.elementToBeClickable(np.getNavPanel()));
 		
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		np.getNavPanel().click();
 		wt.until(ExpectedConditions.visibilityOf(np.getPIM()));
 		wt.until(ExpectedConditions.elementToBeClickable(np.getPIM()));
