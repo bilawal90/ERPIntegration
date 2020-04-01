@@ -286,13 +286,25 @@ Thread.sleep(1000);
 		
 		rp.getItemField().click();
 		rp.getItemField().sendKeys("FIFO" + Keys.ENTER);
-		
+		try {
 		wt.until(ExpectedConditions.visibilityOf(rp.getSellPrice()));
 		wt.until(ExpectedConditions.elementToBeClickable(rp.getSellPrice()));
 		rp.getSellPrice().click();
 		rp.getSellPrice().clear();
 
 		rp.getSellPrice().sendKeys("10");
+		}
+		catch(Exception e)
+		{
+			rp.getSellLine().click();
+			wt.until(ExpectedConditions.visibilityOf(rp.getSellPrice()));
+			wt.until(ExpectedConditions.elementToBeClickable(rp.getSellPrice()));
+			rp.getSellPrice().click();
+			rp.getSellPrice().clear();
+
+			rp.getSellPrice().sendKeys("10");
+			
+		}
 
 		wt.until(ExpectedConditions.visibilityOf(rp.getItemGrp1()));
 		wt.until(ExpectedConditions.elementToBeClickable(rp.getItemGrp1()));

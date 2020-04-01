@@ -62,6 +62,9 @@ By REdit = By.xpath("//*[@id=\"ecoresproductdetailsextendedgrid_11_SystemDefined
 
 By RSave = By.xpath("(//div[@class='button-container'])[2]");
 
+By SellLine = By.xpath("//html/body/div[3]/div[1]/div[2]/div/form[2]/div[4]/div/div[6]/div[2]/div[1]/div[3]/div/div/div/div[2]/div[2]/div[5]");
+
+
 
 
 
@@ -74,6 +77,13 @@ By RSave = By.xpath("(//div[@class='button-container'])[2]");
 		this.driver = driver;
 		
 	}
+	
+	public WebElement getSellLine()
+	{
+		return driver.findElement(SellLine);
+		
+	}
+	
 	
 	
 	public WebElement getProdTab()
