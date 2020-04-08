@@ -281,10 +281,10 @@ Thread.sleep(1000);
 		wt.until(ExpectedConditions.elementToBeClickable(rp.getREdit()));
 		rp.getREdit().click();
 		Thread.sleep(2000);
-		
+		Thread.sleep(2000);
 		wt.until(ExpectedConditions.visibilityOf(rp.getItemField()));
 		wt.until(ExpectedConditions.elementToBeClickable(rp.getItemField()));
-		
+		Thread.sleep(2000);
 		rp.getItemField().click();
 		rp.getItemField().sendKeys("FIFO" + Keys.ENTER);
 		try {
@@ -324,21 +324,21 @@ Thread.sleep(1000);
 		
 
 		//Creating PO
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		wt.until(ExpectedConditions.elementToBeClickable(np.getNavPanel()));
 		wt.until(ExpectedConditions.visibilityOf(np.getNavPanel()));
 		np.getNavPanel().click();
 		
-		
+		Thread.sleep(2000);
 		wt.until(ExpectedConditions.elementToBeClickable(np.getWorkSpace()));
 		np.getWorkSpace().click();
 		
-
+		Thread.sleep(2000);
 		
 		wt.until(ExpectedConditions.elementToBeClickable(np.getPO()));
 		np.getPO().click();
 		
-		
+		Thread.sleep(2000);
 		
 		POPAGE pop = new POPAGE(driver);
 		
